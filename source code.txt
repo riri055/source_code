@@ -1,0 +1,46 @@
+1) Initialize a Git Repository
+Create a new project directory:
+bash
+mkdir my-git-practice
+cd my-git-practice
+
+2) Initialize Git:
+bash
+git init
+
+3) Create Your First Commit
+Create a new file, like README.md, and add some text.
+Stage and commit your file:
+bash
+git add README.md
+git commit -m "Initial commit with README"
+
+4) Create and Work on a New Branch
+Create a new branch to work on a feature:
+bash
+git branch feature-branch
+git checkout feature-branch
+Make changes, stage, and commit on this branch:
+bash
+echo "Feature work" >> feature.txt
+git add feature.txt
+git commit -m "Added feature work in feature.txt"
+
+5) Merge the Feature Branch into Main
+Switch back to the main branch:
+bash
+git checkout main
+Merge the feature branch:
+bash
+git merge feature-branch
+Delete the feature branch (optional cleanup):
+bash
+git branch -d feature-branch
+
+6) Push to a Remote Repository (GitHub)
+Link your local repo to GitHub:
+bash
+git remote add origin https://github.com/your-username/my-git-practice.git
+Push your changes:
+bash
+git push -u origin main
